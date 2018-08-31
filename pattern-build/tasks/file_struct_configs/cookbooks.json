@@ -1,0 +1,85 @@
+{
+  "chef": {
+      "cookbooks": {
+          "<cookbook_name>": {
+              "attributes": {
+                  "files": {
+                      "mandatory": [
+                          "default.rb.*",
+                          "internal.rb.*"
+                      ]
+                  }
+              },
+              "recipes": {
+                  "files": {
+                      "mandatory": [
+                          "prereq.rb",
+                          "install.rb",
+                          "gather_evidence.rb"
+                      ],
+                      "unwanted": [
+                          "config.rb"
+                      ]
+                  }
+              },
+              "spec": {
+                  "recipes": {
+                      "files": {
+                          "mandatory": [
+                              "^*.rb"
+                          ]
+                      }
+                  },
+                  "files": {
+                      "mandatory": [
+                          "spec_helper.rb"
+                      ]
+                  }
+              },
+              "files": {
+                  "mandatory": [
+                      "README.md",
+                      "metadata.rb",
+                      "Berksfile.in",
+                      "chefignore"
+                  ],
+                  "unwanted": [
+                      "CHANGELOG.md",
+                      ".rubocop.yaml",
+                      ".rubocop.yml"
+                  ]
+              }
+          }
+      },
+      "roles": {
+          "files": {
+              "mandatory": [
+                  "^*.json"
+              ]
+          }
+      }
+  },
+  "test": {
+      "integration": {
+          "files": {
+              "mandatory": [
+                  "^*"
+              ]
+          }
+      }
+  },
+  "files": {
+      "mandatory": [
+          "^Berksfile$",
+          "^.travis.yml$",
+          "^.gitignore$",
+          "^README.md$"
+      ],
+      "unwanted": [
+          "product_details.json",
+          "camtemplate.json",
+          "catalog.json",
+          "resources/"
+      ]
+  }
+}

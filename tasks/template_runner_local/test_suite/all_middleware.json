@@ -1,0 +1,15 @@
+{
+    "all_middleware": {
+        "clouds": "vsphere aws ibm",
+        "template_regex": ".",
+        "not_template_regex": "",
+        "test_cases": {
+            "vsphere": "default",
+            "ibm": "default",
+            "aws": "default"
+        },
+        "branch": "development",
+        "delete_failed_deployments": "true",
+        "autodestroy": "true"
+   }
+}

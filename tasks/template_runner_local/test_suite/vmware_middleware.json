@@ -1,0 +1,15 @@
+{
+    "vmware_middleware": {
+        "clouds": "vsphere",
+        "template_regex": ".",
+        "not_template_regex": "",
+        "test_cases": {
+            "vsphere": "redhat6 redhat7",
+            "ibm": "",
+            "aws": ""
+        },
+        "branch": "development",
+        "delete_failed_deployments": "true",
+        "autodestroy": "true"
+   }
+}

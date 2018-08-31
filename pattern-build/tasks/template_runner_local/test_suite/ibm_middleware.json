@@ -1,0 +1,15 @@
+{
+    "ibm_middleware": {
+        "clouds": "ibm",
+        "template_regex": ".",
+        "not_template_regex": "",
+        "test_cases": {
+            "vsphere": "",
+            "ibm": "ubuntu16",
+            "aws": ""
+        },
+        "branch": "development",
+        "delete_failed_deployments": "true",
+        "autodestroy": "true"
+   }
+}

@@ -1,0 +1,85 @@
+Layout/AlignParameters:
+  Enabled: true
+  EnforcedStyle: with_first_parameter
+Encoding:
+  Enabled: false
+HashSyntax:
+  Enabled: false
+LineLength:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Layout/TrailingWhitespace:
+  Enabled: false
+Layout/LeadingCommentSpace:
+  Enabled: false
+Layout/IndentationWidth:
+  Enabled: false
+Layout/TrailingBlankLines:
+  Enabled: false
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+Layout/SpaceAroundOperators:
+  Enabled: false
+Layout/Tab:
+  Enabled: false
+Layout/EmptyLines:
+  Enabled: false
+Layout/ExtraSpacing:
+  Enabled: true
+Style/BarePercentLiterals:
+  Enabled: false
+Layout/FirstParameterIndentation:
+  Enabled: false
+Style/UnneededPercentQ:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Layout/IndentHash:
+  Enabled: true
+Layout/SpaceAfterComma:
+  Enabled: true
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
+Layout/AlignHash:
+  Enabled: true
+Style/IfUnlessModifier:
+  Enabled: false
+Layout/SpaceInsideBrackets:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Style/CommentAnnotation:
+  Enabled: false
+Style/PercentQLiterals:
+  Enabled: false
+Style/RegexpLiteral:
+  Enabled: false
+Layout/EndOfLine:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 250
+  Exclude:
+    - chef/cookbooks/**/spec/*.rb
+    - chef/cookbooks/**/spec/recipes/*.rb
+Metrics/ModuleLength:
+  Max: 250
+  Exclude:
+    - chef/cookbooks/**/spec/*.rb
+    - chef/cookbooks/**/spec/recipes/*.rb
+Metrics/BlockLength:
+  Max: 250
+  Exclude:
+    - "tasks/*"
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: true
+Style/SymbolArray:
+  EnforcedStyle: brackets
+Metrics/ParameterLists:
+  Enabled: false

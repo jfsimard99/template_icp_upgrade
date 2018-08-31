@@ -1,0 +1,679 @@
+{
+        "test_data": {
+        "bastionhostobj": "DefaultNoBastionHostRequired",
+        "httpproxy": "DefaultNoProxyRequired",
+	    "cam_instance": "9.37.194.118",
+            "content_runtime": {
+                "vsphere": "5aa15906f7161a001e67ee59",
+                "ibm": "5aa14b55f7161a001e67ee46",
+                "aws": "5aa15082f7161a001e67ee4d"
+            },
+            "cloud_connection": {
+                "vsphere": "vmware_octravis",
+                "ibm": "ibm_octravis",
+                "aws": "aws_octravis"
+            },
+	    "cloud_types": ["vmware", "aws", "ibm"],
+        "provider": "minipam",
+        "minipam_url": "http://9.5.38.0:5000"
+	},
+	"ip_pool": [
+        {
+            "ip_hostname": "octravis1",
+            "ip_ipaddress": "9.5.37.46",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis2",
+            "ip_ipaddress": "9.5.38.85",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis3",
+            "ip_ipaddress": "9.5.38.90",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis4",
+            "ip_ipaddress": "9.5.38.91",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis5",
+            "ip_ipaddress": "9.5.38.96",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis6",
+            "ip_ipaddress": "9.5.38.97",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis7",
+            "ip_ipaddress": "9.5.38.98",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis8",
+            "ip_ipaddress": "9.5.38.99",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis9",
+            "ip_ipaddress": "9.5.38.103",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis10",
+            "ip_ipaddress": "9.5.38.105",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis11",
+            "ip_ipaddress": "9.5.38.108",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis12",
+            "ip_ipaddress": "9.5.38.109",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis13",
+            "ip_ipaddress": "9.5.38.110",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis14",
+            "ip_ipaddress": "9.5.38.111",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis15",
+            "ip_ipaddress": "9.5.38.112",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis16",
+            "ip_ipaddress": "9.5.38.118",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis17",
+            "ip_ipaddress": "9.5.38.119",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis18",
+            "ip_ipaddress": "9.5.38.121",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis19",
+            "ip_ipaddress": "9.5.38.122",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis20",
+            "ip_ipaddress": "9.5.38.127",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis21",
+            "ip_ipaddress": "9.5.38.130",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis22",
+            "ip_ipaddress": "9.5.38.131",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis23",
+            "ip_ipaddress": "9.5.38.138",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis24",
+            "ip_ipaddress": "9.5.38.140",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis31",
+            "ip_ipaddress": "9.5.38.162",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis32",
+            "ip_ipaddress": "9.5.38.163",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis34",
+            "ip_ipaddress": "9.5.38.173",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis35",
+            "ip_ipaddress": "9.5.38.174",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis36",
+            "ip_ipaddress": "9.5.38.175",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis37",
+            "ip_ipaddress": "9.5.38.176",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis38",
+            "ip_ipaddress": "9.5.38.178",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis39",
+            "ip_ipaddress": "9.5.38.183",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis40",
+            "ip_ipaddress": "9.5.38.184",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+       {
+            "ip_hostname": "octravis41",
+            "ip_ipaddress": "9.5.38.185",
+            "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis46",
+	        "ip_ipaddress": "9.5.38.196",
+	        "ip_domain": "rch.stglabs.ibm.com"
+        },
+        {
+            "ip_hostname": "octravis47",
+	        "ip_ipaddress": "9.5.38.199",
+	        "ip_domain": "rch.stglabs.ibm.com"
+	    },
+        {
+            "ip_hostname": "octravis48",
+	        "ip_ipaddress": "9.5.38.200",
+	        "ip_domain": "rch.stglabs.ibm.com"
+	    },
+      {
+          "ip_hostname": "octravis49",
+          "ip_ipaddress": "9.5.38.203",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },
+      {
+          "ip_hostname": "octravis50",
+          "ip_ipaddress": "9.5.38.204",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },
+      {
+          "ip_hostname": "octravis51",
+          "ip_ipaddress": "9.5.38.205",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },
+      {
+          "ip_hostname": "octravis52",
+          "ip_ipaddress": "9.5.38.208",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },
+      {
+          "ip_hostname": "content-dev10",
+          "ip_ipaddress": "9.5.37.191",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },
+      {
+          "ip_hostname": "content-dev11",
+          "ip_ipaddress": "9.5.37.194",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },{
+          "ip_hostname": "content-dev12",
+          "ip_ipaddress": "9.5.37.197",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },{
+          "ip_hostname": "content-dev13",
+          "ip_ipaddress": "9.5.37.198",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },{
+          "ip_hostname": "content-dev14",
+          "ip_ipaddress": "9.5.37.202",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },{
+          "ip_hostname": "content-dev15",
+          "ip_ipaddress": "9.5.37.207",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },{
+          "ip_hostname": "content-dev16",
+          "ip_ipaddress": "9.5.37.214",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },{
+          "ip_hostname": "content-dev17",
+          "ip_ipaddress": "9.5.37.221",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },{
+          "ip_hostname": "content-dev18",
+          "ip_ipaddress": "9.5.37.222",
+          "ip_domain": "rch.stglabs.ibm.com"
+      },
+      {
+          "ip_hostname": "content-dev19",
+          "ip_ipaddress": "9.5.37.228",
+          "ip_domain": "rch.stglabs.ibm.com"
+      }
+	],
+    "ip_fields": ["_domain", "-name", "_ipv4_address"],
+	"global": {
+        "ibm_stack_name": {
+            "default": "",
+            "scope": "all",
+            "type": "random"
+        },
+        "ibm_stack_id": {
+            "default": "",
+            "scope": "all",
+            "type": "random"
+        },
+        "allow_unverified_ssl": {
+            "default": "true",
+            "scope": "vmare",
+            "type": "lookup"
+        },
+        "aws_ami_owner_id": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "aws_region": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "aws_sg_camc_name": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "aws_vpc_name": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "ibm_sw_repo": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_sw_repo_password": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_sw_repo_user": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_private_ssh_key": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_public_ssh_key": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_access_token": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_service": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "runtime_domain": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        }, 
+        "chef_ip": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "chef_fqdn": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "chef_pem": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        }
+	},
+	"node": {
+        "domain": {
+            "default": "",
+            "scope": "all",
+            "type": "ip_domain"
+        },
+        "image": {
+            "default": "",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "os_admin_user": {
+            "default": "root",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "name": {
+            "default": "",
+            "scope": "all",
+            "type": "ip_hostname"
+        },
+        "user_public_ssh_key": {
+            "default": "none",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "dns_servers": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "dns_suffixes": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_keep_on_remove": {
+            "default": "true",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "resource_pool": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "os_password": {
+            "default": "none",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "root_disk_controller_type": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_datastore": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_type": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "ipv4_gateway": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "ipv4_address": {
+            "default": "",
+            "scope": "vmware",
+            "type": "ip_address"
+        },
+        "memory": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "ipv4_prefix_length": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "number_of_vcpu": {
+            "default": "",
+            "scope": "",
+            "type": "lookup"
+        },
+        "folder": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "datacenter": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "cluster": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_size": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "network_interface_label": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_block_device_delete_on_termination": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "root_block_device_volume_size": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "root_block_device_volume_type": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "subnet_name": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "associate_public_ip_address": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "flavor": {
+            "deault": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "mgt-network-public": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "local_disk": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "datacenter": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "dedicated_acct_host_only": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "hourly_billing": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "network_speed": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "memory": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "number_of_cores": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "root_disk_size": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "mgt-network-public": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "private_network_only": {
+            "default": "false",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        }
+    },
+    "virtual_machines": {
+        "vmware": {
+            "image": "Content/ContentRH_Template_2018_1Q",
+            "dns_servers": ["9.5.175.8", "9.0.128.50"],
+            "dns_suffixes": ["rch.stglabs.ibm.com"],
+            "root_disk_keep_on_remove": "false",
+            "os_password": "Op3nPatterns",
+            "root_disk_controller_type": "scsi",
+            "root_disk_datastore": "WildManageTo",
+            "root_disk_type": "thin",
+            "ipv4_gateway": "9.5.36.1",
+            "memory": "4096",
+            "ipv4_prefix_length": "22",
+            "number_of_vcpu": "2",
+            "folder": "Content",
+            "datacenter": "wild-cam-ManageTo",
+            "cluster": "wild-cluster01",
+            "network_interface_label": "VM Network",
+            "allow_unverified_ssl": "true",
+            "os_admin_user": "root",
+            "user_public_ssh_key": "none",
+            "storage-volume_disk_datastore": "WildManageTo",
+            "storage-volume1_disk_datastore": "WildManageTo",
+            "storage-volume2_disk_datastore": "WildManageTo",
+            "storage-volume3_disk_datastore": "WildManageTo"
+        },
+        "vsphere": {
+            "image": "Content/ContentRH_Template_2018_1Q",
+            "dns_servers": ["9.5.175.8", "9.0.128.50"],
+            "dns_suffixes": ["rch.stglabs.ibm.com"],
+            "root_disk_keep_on_remove": "false",
+            "os_password": "Op3nPatterns",
+            "root_disk_controller_type": "scsi",
+            "root_disk_datastore": "WildManageTo",
+            "root_disk_type": "thin",
+            "ipv4_gateway": "9.5.36.1",
+            "memory": "4096",
+            "ipv4_prefix_length": "22",
+            "number_of_vcpu": "2",
+            "folder": "Content",
+            "datacenter": "wild-cam-ManageTo",
+            "cluster": "wild-cluster01",
+            "network_interface_label": "VM Network",
+            "allow_unverified_ssl": "true",
+            "os_admin_user": "root",
+            "user_public_ssh_key": "none",
+            "root_disk_size": "60",
+            "resource_pool": "wild-cluster01/Resources",
+            "storage-volume_disk_datastore": "WildManageTo",
+            "storage-volume1_disk_datastore": "WildManageTo",
+            "storage-volume2_disk_datastore": "WildManageTo",
+            "storage-volume3_disk_datastore": "WildManageTo",
+            "use_cases": {
+                "ubuntu14": {
+                    "image": "Content/ContentUbuntu14_Template_2018_1Q"
+                },
+                "ubuntu16": {
+                    "image": "Content/ContentUbuntu16_Template_2018_1Q"
+                },
+                "redhat7": {
+                    "image": "Content/ContentRH_Template_2018_1Q"
+                }
+            }
+        },
+        "aws": {
+            "aws_ami_owner_id": "309956199498",
+            "aws_region": "us-east-1",
+            "aws_vpc_name": "openContentVPC",
+            "aws_sg_camc_name": "openContentApplicationSG",
+            "subnet_name": "openContentSubnet",
+            "root_block_device_delete_on_termination": "true",
+            "root_block_device_volume_size": "25",
+            "root_block_device_volume_type": "gp2",
+            "associate_public_ip_address": "true",
+            "flavor": "t2.medium",
+            "image": "RHEL-7.4_HVM_GA",
+            "os_admin_user": "ec2-user",
+            "user_public_ssh_key": "None",
+            "aws_sg_camc_name": "openContentApplicationSG",
+            "use_cases": {
+                "ubuntu14": {
+                    "aws_ami_owner_id": "099720109477",
+                    "image": "ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"
+                },
+                "ubuntu16": {
+                    "aws_ami_owner_id": "099720109477",
+                    "image": "ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"
+                }
+            }
+       },
+       "ibm": {
+           "image": "REDHAT_7_64",
+           "local_disk": "false",
+           "datacenter": "",
+           "dedicated_acct_host_only": "false",
+           "hourly_billing": "true",
+           "network_speed": "1000",
+           "memory": "4096",
+           "number_of_cores": "2",
+           "root_disk_size": "25",
+           "mgt-network-public": "true",
+           "private_network_only": "false",
+           "os_admin_user": "root",
+           "user_public_ssh_key": "None",
+           "use_cases": {
+               "ubuntu14": {
+                   "image": "UBUNTU_14_64"
+               },
+               "ubuntu16": {
+                   "image": "UBUNTU_16_64"
+               }
+           }
+       }
+    }
+}

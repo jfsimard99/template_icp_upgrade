@@ -1,0 +1,49 @@
+{
+    "name": "IBM Cloud Private Upgrade",
+    "description": "This template will upgrade your IBM Cloud Private version",
+    "version": "1.0",
+    "imageUrl": "",
+    "image": "",
+    "type": "prebuilt",
+    "status": "active",
+    "manifest": {
+      "template_type": "Terraform",
+      "template_format": "HCL",
+      "template_provider": "VMware vSphere",
+      "template": {
+        "templateData": "",
+        "templateVariables": "",
+        "templateOutput": ""
+      },
+      "template_source": {
+        "githubRepoUrl": "",
+        "githubAccessToken": "",
+        "relativePathToTemplateFolder": "vmware/terraform",
+        "templateFileName": "main.tf"
+      }
+    },
+    "metadata": {
+      "displayName": "IBM Cloud Private Upgrade",
+      "providerDisplayName": "VMware vSphere",
+      "longDescription": "This template will upgrade your IBM Cloud Private version",
+      "bullets": [{
+    "title": "Clouds",
+    "description": " VMware vSphere<br>"},
+{
+    "title": "Operating Systems Supported",
+    "description": "Ubuntu 16<br>"},
+{
+    "title": "Usage and Special Notes",
+    "description": "1. IBM Knowledge Center for IBM Cloud Private - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSBS6K/product_welcome_cloud_private.html\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSBS6K/product_welcome_cloud_private.html</a><br>2. IBM Support Portal - <a href=\"https://www.ibm.com/support/home/\" target=\"_blank\">https://www.ibm.com/support/home/</a><br>"
+}
+],
+      "featuredImageUrl": "",
+      "imageUrl": "",
+      "mediumImageUrl": "",
+      "smallImageUrl": "",
+      "documentationUrl": "",
+      "termsUrl": "",
+      "media": [
+      ]
+    }
+}

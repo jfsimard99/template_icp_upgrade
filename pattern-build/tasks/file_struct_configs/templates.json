@@ -1,0 +1,14 @@
+{
+  "**/terraform/": {
+    "files": {
+        "mandatory": [
+          "camvariables.json",
+          "camtemplate.json",
+          ".*.tf$"
+        ],
+      "unwanted": [
+          "catalog.json"
+      ]
+    }
+  }
+}

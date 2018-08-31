@@ -1,0 +1,15 @@
+{
+    "aws_middleware": {
+        "clouds": "aws",
+        "template_regex": ".",
+        "not_template_regex": "db2",
+        "test_cases": {
+            "vsphere": "",
+            "ibm": "",
+            "aws": "ubuntu14"
+        },
+        "branch": "development",
+        "delete_failed_deployments": "true",
+        "autodestroy": "true"
+   }
+}

@@ -1,0 +1,493 @@
+{
+        "test_data": {
+        "bastionhostobj": "DefaultNoBastionHostRequired",
+        "httpproxy": "Rack36Proxy",
+	    "cam_instance": "172.20.112.90",
+            "content_runtime": {
+                "vsphere": "5b4d1d301fce8a004638518b",
+                "ibm": "5b4d2e341fce8a00463851b4",
+                "aws": "5b4d2aa71fce8a00463851ac"
+            },
+            "cloud_connection": {
+                "vsphere": "vmware_rack36",
+                "ibm": "ibm_octravis",
+                "aws": "aws_octravis"
+            },
+	    "cloud_types": ["vmware", "aws", "ibm"],
+        "provider": "local",
+        "minipam_url": "http://9.42.134.254:5200"
+	},
+	"ip_pool": [
+        {
+            "ip_hostname": "ipas-pvm-112-093",
+            "ip_ipaddress": "172.20.112.93",
+            "ip_domain": "purescale.raleigh.ibm.com"
+        },
+        {
+            "ip_hostname": "ipas-pvm-112-026",
+            "ip_ipaddress": "172.20.112.26",
+            "ip_domain": "purescale.raleigh.ibm.com"
+        },
+        {
+            "ip_hostname": "ipas-pvm-112-032",
+            "ip_ipaddress": "172.20.112.32",
+            "ip_domain": "purescale.raleigh.ibm.com"
+        },
+        {
+            "ip_hostname": "ipas-pvm-112-034",
+            "ip_ipaddress": "172.20.112.34",
+            "ip_domain": "purescale.raleigh.ibm.com"
+        },
+        {
+            "ip_hostname": "ipas-pvm-112-077",
+            "ip_ipaddress": "172.20.112.77",
+            "ip_domain": "purescale.raleigh.ibm.com"
+        },
+        {
+            "ip_hostname": "ipas-pvm-112-101",
+            "ip_ipaddress": "172.20.112.101",
+            "ip_domain": "purescale.raleigh.ibm.com"
+        }                               
+	],
+    "ip_fields": ["_domain", "-name", "_ipv4_address"],
+	"global": {
+        "ibm_stack_name": {
+            "default": "",
+            "scope": "all",
+            "type": "random"
+        },
+        "ibm_stack_id": {
+            "default": "",
+            "scope": "all",
+            "type": "random"
+        },
+        "allow_unverified_ssl": {
+            "default": "true",
+            "scope": "vmare",
+            "type": "lookup"
+        },
+        "aws_ami_owner_id": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "aws_region": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "aws_sg_camc_name": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "aws_vpc_name": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "ibm_sw_repo": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_sw_repo_password": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_sw_repo_user": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_private_ssh_key": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_public_ssh_key": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_access_token": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "ibm_pm_service": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "chef_ip": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "chef_fqdn": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "chef_pem": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "offline_installation": {
+            "default": "false",
+            "scope": "all",
+            "type": "content_runtime"
+        }, 
+        "chef_client_version": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        },
+        "chef_client_path": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        }, 
+        "encryption_passphrase": {
+            "default": "",
+            "scope": "all",
+            "type": "content_runtime"
+        }
+	},
+	"node": {
+        "domain": {
+            "default": "",
+            "scope": "all",
+            "type": "ip_domain"
+        },
+        "image": {
+            "default": "",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "os_admin_user": {
+            "default": "root",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "name": {
+            "default": "",
+            "scope": "all",
+            "type": "ip_hostname"
+        },
+        "user_public_ssh_key": {
+            "default": "none",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "dns_servers": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "dns_suffixes": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_keep_on_remove": {
+            "default": "true",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "resource_pool": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "os_password": {
+            "default": "none",
+            "scope": "all",
+            "type": "lookup"
+        },
+        "root_disk_controller_type": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_datastore": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_type": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "ipv4_gateway": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "ipv4_address": {
+            "default": "",
+            "scope": "vmware",
+            "type": "ip_address"
+        },
+        "memory": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "ipv4_prefix_length": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "number_of_vcpu": {
+            "default": "",
+            "scope": "",
+            "type": "lookup"
+        },
+        "folder": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "datacenter": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "cluster": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_disk_size": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "network_interface_label": {
+            "default": "",
+            "scope": "vmware",
+            "type": "lookup"
+        },
+        "root_block_device_delete_on_termination": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "root_block_device_volume_size": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "root_block_device_volume_type": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "subnet_name": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "associate_public_ip_address": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "flavor": {
+            "deault": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "mgt-network-public": {
+            "default": "",
+            "scope": "aws",
+            "type": "lookup"
+        },
+        "local_disk": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "datacenter": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "dedicated_acct_host_only": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "hourly_billing": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "network_speed": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "memory": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "number_of_cores": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "root_disk_size": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "mgt-network-public": {
+            "default": "",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "private_network_only": {
+            "default": "false",
+            "scope": "ibmcloud",
+            "type": "lookup"
+        },
+        "runtime_domain": {
+            "default": "",
+            "scope": "all",
+            "type": "lookup"
+        }
+    },
+    "virtual_machines": {
+        "vmware": {
+            "image": "Content/ContentUbuntu16_Template_2018_1Q_thin",
+            "dns_servers": ["172.15.248.101","172.15.248.102"],
+            "dns_suffixes": ["purescale.raleigh.ibm.com"],
+            "root_disk_keep_on_remove": "false",
+            "os_password": "Op3nPatterns",
+            "root_disk_controller_type": "scsi",
+            "root_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "root_disk_type": "thin",
+            "ipv4_gateway": "172.20.112.1",
+            "memory": "4096",
+            "ipv4_prefix_length": "24",
+            "number_of_vcpu": "2",
+            "folder": "Content",
+            "datacenter": "Rack-8283_Rack36",
+            "cluster": "Shared",
+            "network_interface_label": "836",
+            "allow_unverified_ssl": "true",
+            "os_admin_user": "root",
+            "user_public_ssh_key": "none",
+            "root_disk_size": "60",
+            "resource_pool": "Shared/Resources",
+            "storage-volume_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "storage-volume1_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "storage-volume2_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "storage-volume3_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "runtime_domain": "purescale.raleigh.ibm.com"
+        },
+        "vsphere": {
+            "image": "Content/ContentUbuntu16_Template_2018_1Q_thin",
+            "dns_servers": ["172.15.248.101","172.15.248.102"],
+            "dns_suffixes": ["purescale.raleigh.ibm.com"],
+            "root_disk_keep_on_remove": "false",
+            "os_password": "Op3nPatterns",
+            "root_disk_controller_type": "scsi",
+            "root_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "root_disk_type": "thin",
+            "ipv4_gateway": "172.20.112.1",
+            "memory": "4096",
+            "ipv4_prefix_length": "24",
+            "number_of_vcpu": "2",
+            "folder": "Content",
+            "datacenter": "Rack-8283_Rack36",
+            "cluster": "Shared",
+            "network_interface_label": "836",
+            "allow_unverified_ssl": "true",
+            "os_admin_user": "root",
+            "user_public_ssh_key": "none",
+            "root_disk_size": "60",
+            "resource_pool": "Shared/Resources",
+            "storage-volume_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "storage-volume1_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "storage-volume2_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "storage-volume3_disk_datastore": "p_37a00ce7-a1f9-4274-bc4c-67032e6b6eca",
+            "runtime_domain": "purescale.raleigh.ibm.com",
+            "use_cases": {
+                "ubuntu14": {
+                    "image": "Content/ContentUbuntu14_Template_2018_1Q_thin"
+                },
+                "ubuntu16": {
+                    "image": "Content/ContentUbuntu16_Template_2018_1Q_thin"
+                },
+                "redhat7": {
+                    "image": "Content/ContentRH_Template_2018_1Q_thin"
+                }
+            }
+        },
+        "aws": {
+            "aws_ami_owner_id": "309956199498",
+            "aws_region": "us-east-1",
+            "aws_vpc_name": "openContentVPC",
+            "aws_sg_camc_name": "openContentApplicationSG",
+            "subnet_name": "openContentSubnet",
+            "root_block_device_delete_on_termination": "true",
+            "root_block_device_volume_size": "25",
+            "root_block_device_volume_type": "gp2",
+            "associate_public_ip_address": "true",
+            "flavor": "t2.medium",
+            "image": "RHEL-7.4_HVM_GA",
+            "os_admin_user": "ec2-user",
+            "user_public_ssh_key": "None",
+            "aws_sg_camc_name": "openContentApplicationSG",
+            "runtime_domain": "camtest.ibm.com",
+            "use_cases": {
+                "ubuntu14": {
+                    "image": "ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"
+                },
+                "ubuntu16": {
+                    "aws_ami_owner_id": "099720109477",
+                    "image": "ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"
+                },
+                "redhat7": {
+                    "aws_ami_owner_id": "309956199498",
+                    "image": "RHEL-7.5_HVM_GA-20180322-x86_64-1-Hourly2-GP2"
+                }
+            }
+       },
+       "ibm": {
+           "image": "REDHAT_7_64",
+           "local_disk": "false",
+           "datacenter": "",
+           "dedicated_acct_host_only": "false",
+           "hourly_billing": "true",
+           "network_speed": "1000",
+           "memory": "4096",
+           "number_of_cores": "2",
+           "root_disk_size": "25",
+           "mgt-network-public": "true",
+           "private_network_only": "false",
+           "os_admin_user": "root",
+           "user_public_ssh_key": "None",
+           "runtime_domain": "camtest.ibm.com",
+           "use_cases": {
+               "ubuntu14": {
+                   "image": "UBUNTU_14_64"
+               },
+               "ubuntu16": {
+                   "image": "UBUNTU_16_64"
+               },
+               "redhat7": {
+                   "image": "REDHAT_7_64"
+               }
+           }
+       }
+    }
+}

@@ -1,0 +1,77 @@
+rules:
+  copyright_checker:
+    type: fail_on_no_match
+    files:
+      - '*.rb'
+      - 'README.md'
+    content: "Copyright IBM Corp. (20[0-9]{2}, )?#{commit_year}(\\s|'|\"|\\.)?"
+    error_message: 'No matching Copyright found: '
+    start_line: 0
+
+  password_checker:
+    type: fail_on_match
+    files:
+      - '*.rb'
+      - '*.yaml'
+      - '*.yml'
+      - '*.json'
+      - '*.erb'
+      - '*.in'
+      - 'README.md'
+    exclude:
+      - 'databag'
+      - 'testing_variables.json'
+      - 'override_variables.json'
+    ignore_rule: '~password_checker'
+    content: (?i)^(_?|-?)((password|pwd|pass|pw|passd|passwd|paswd|pasd|pawd|passw)|.*(admin_)(password|pwd|pass|pw|passd|passwd|paswd|pasd|pawd|passw)|.*_pwd"|.*'pwd|"|')(_?).*(\s?)(:=|=|:=|:|=>|:=>)((\s?)(?!.*'')(?!.*node|.*{|.*""|.*'')(?!.*to_s)(((['"]).+(['"])|((...)(.*))|(\w+))))
+    error_message: 'Found password set: '
+
+  ip_checker:
+    type: fail_on_match
+    files:
+      - '*.rb'
+      - '*.yaml'
+      - '*.yml'
+      - '*.erb'
+      - '*.json'
+      - '*.in'
+      - '*.tf'   # terraform templates / HCL
+    ignore_rule: '~ip_checker'
+    exclude:
+      - 'spec'
+      - 'attributes.json'
+      - 'components.json'
+      - 'camvariables.json'
+      - 'override_variables.json'
+      - 'cookbook_metadata.json'
+      - 'metadata.rb'
+      - 'testing_variables.json'
+      - 'testing_variables_rochester.json'
+      - 'stockTraderServiceSample.json'
+      - 'testing_variables_camdc1.json'    
+      - 'testing_variables_rack36_prvt.json'
+      - 'testing_variables_rack36_public.json'
+    content: (?i)^(?!.*version.*)(?!.*patch.*)(?!.*release.*)(?!.*default.*=.*)(?!.default.*:.*)(.*)[^\.0-9](((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?<!127)(?<!10)(?<!0)\.)(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){2}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))[^\.0-9](.*)$
+    error_message: 'Found hardcoded IP address: '
+
+  mode_checker:
+    type: fail_on_match
+    files:
+      - '*.rb'
+      - '*.yaml'
+      - '*.yml'
+      - '*.erb'
+      - '*.json'
+      - '*.in'
+      - '*.tf'   # terraform templates / HCL
+      - '*.sh'
+      - '*.py'
+    ignore_rule: '~mode_checker'
+    exclude:
+      - 'spec'
+      - 'attributes.json'
+      - 'components.json'
+      - 'metadata.rb'
+      - 'static_code_analysis_rules.yaml'
+    content: (mode|chmod).*777
+    error_message: 'Found chmod 777: '

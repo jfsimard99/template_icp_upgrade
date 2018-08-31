@@ -1,0 +1,39 @@
+{
+    "name": "#{NAME} - #{CLOUD_TYPE}",
+    "description": "#{SHORT_DESCRIPTION}",
+    "version": "#{VERSION}",
+    "imageUrl": "",
+    "image": "",
+    "type": "chefcontent",
+    "status": "active",
+    "manifest": {
+      "template_type": "Terraform",
+      "template_format": "HCL",
+      "template_provider": "#{CLOUD_TYPE}",
+      "template": {
+        "templateData": "",
+        "templateVariables": "",
+        "templateOutput": ""
+      },
+      "template_source": {
+        "githubRepoUrl": "",
+        "githubAccessToken": "",
+        "relativePathToTemplateFolder": "#{PATH}",
+        "templateFileName": "#{FILE}"
+      }
+    },
+    "metadata": {
+      "displayName": "#{NAME}",
+      "providerDisplayName": "#{CLOUD_TYPE}",
+      "longDescription": "#{LONG_DESCRIPTION}",
+      "bullets": [#{BULLETS}],
+      "featuredImageUrl": "",
+      "imageUrl": "",
+      "mediumImageUrl": "",
+      "smallImageUrl": "",
+      "documentationUrl": "",
+      "termsUrl": "",
+      "media": [
+      ]
+    }
+}
