@@ -9,7 +9,7 @@
     "manifest": {
       "template_type": "Terraform",
       "template_format": "HCL",
-      "template_provider": "VMware vSphere",
+      "template_provider": "IBM Cloud Private",
       "template": {
         "templateData": "",
         "templateVariables": "",
@@ -18,17 +18,17 @@
       "template_source": {
         "githubRepoUrl": "",
         "githubAccessToken": "",
-        "relativePathToTemplateFolder": "vmware/terraform",
+        "relativePathToTemplateFolder": "ICP/terraform",
         "templateFileName": "main.tf"
       }
     },
     "metadata": {
       "displayName": "IBM Cloud Private Upgrade",
-      "providerDisplayName": "VMware vSphere",
+      "providerDisplayName": "",
       "longDescription": "This template will upgrade your IBM Cloud Private version",
       "bullets": [{
     "title": "Clouds",
-    "description": " VMware vSphere<br>"},
+    "description": "<br>"},
 {
     "title": "Operating Systems Supported",
     "description": "Ubuntu 16<br>"},

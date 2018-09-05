@@ -1,8 +1,3 @@
-provider "vsphere" {
-  version              = "~> 1.3"
-  allow_unverified_ssl = "true"
-}
-
 provider "random" {
   version = "~> 1.0"
 }
@@ -48,7 +43,6 @@ module "icp_upgrade" {
   cluster_location           = "${var.cluster_location}"
   icp_cluster_name           = "${var.icp_cluster_name}"
   master_node_ip             = "${var.master_node_ip}"
-  cluster_vip                = "${var.cluster_vip}"
   kube_apiserver_secure_port = "${var.kube_apiserver_secure_port}"
   #######
   bastion_host               = "${var.bastion_host}"

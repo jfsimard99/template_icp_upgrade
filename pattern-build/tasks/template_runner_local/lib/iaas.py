@@ -141,7 +141,7 @@ class IaaS(object):
 
         template_format = "JSON" if template.strip().startswith("{") else "HCL"
 
-		# parse the template and find the provider
+        # parse the template and find the provider
         template_parsed = hcl.loads(template) # parse the JSON/HCL template into dict
         #self.logger.info('template_parsed %s' % template_parsed)
         template_provider=""
@@ -161,7 +161,7 @@ class IaaS(object):
 
         # template_provider = template_parsed['provider'].keys()[0]
         self.logger.info('template_provider %s' % template_provider)
-		# find an appropiate cloud connection id
+        # find an appropiate cloud connection id
         cloud_connection = self.get_cloud_connection(template_provider)
 
         # build the request data
@@ -458,13 +458,7 @@ class IaaS(object):
 
             if translation_variables['test_data']['provider'] == "minipam":
                 for ip in self.iplist:
-                    #Added during power outage.
-                    try:
-                        response = requests.get(translation_variables['test_data']['minipam_url'] + "/free?ip_address="+ ip)
-                    except Exception as e:
-                         self.logger.info("Ignore exception")
-                         print(e)
-                    
+                    response = requests.get(translation_variables['test_data']['minipam_url'] + "/free?ip_address="+ ip)
         return True
 
     def destroy(self, stack, retry=True):

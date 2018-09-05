@@ -138,7 +138,9 @@ instructions on how to configure the software repository NFS mounts.
 When creating the pipeline, use the above instructions to create the cloud connections
 and content runtimes and setup the software repository.  
 
-The following files need to be updated for the pipeline to work properly. 
+The following files need to be updated for the pipeline to work properly.
+
+Note: You need not update the content runtime IDs in testing_variables.json and iaas.py if the content runtime is named as cam-<cloud_type>-octravis exmplae: camc-aws-octravis, camc-ibm-octravis or camc-vmware-octravis. Otherwise you must update the content runtime IDs as shown below.
 
  - pattern-build/tasks/template_runner_local/testing_variables.json
     - update `"test_data": {

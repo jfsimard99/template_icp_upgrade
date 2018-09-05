@@ -237,8 +237,7 @@ namespace :orpheus do
     cloud_type = "vmware" if template_dir.include?("vmware/")
     cloud_type = "other" if template_dir.include?("other/")
     
-    #Added vmware to allow merge during power outage
-    if cloud_type == "other" || cloud_type == "vmware"
+    if cloud_type == "other"
       log "skipping other templates ..............."
     else
       # else

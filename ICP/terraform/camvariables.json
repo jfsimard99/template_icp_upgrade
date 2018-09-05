@@ -88,6 +88,17 @@
         "group_name": "oldicp"
       },
       {
+        "name": "master_node_ip",
+        "description": "Please provide master ip for a non-HA topology",
+        "type": "string",
+        "required": true,
+        "secured": false,
+        "label": "Master Node IP Address",
+        "hidden": false,
+        "immutable": false,
+        "group_name": "oldicp"
+      },
+      {
         "name": "vm_os_user",
         "description": "The user name to use while configuring the IBM Cloud Private Boot Node",
         "default": "root",
@@ -125,13 +136,22 @@
       {
         "name": "new_icp_version",
         "description": "New IBM Cloud Private Version",
-        "default": "2.1.0.3",
         "type": "string",
         "required": true,
         "secured": false,
         "label": "New IBM Cloud Private Version",
         "hidden": false,
         "immutable": false,
+        "options": [
+          {
+          "value": "2.1.0.3",
+          "label": "2.1.0.3"
+          },
+          {
+          "value": "2.1.0.3-fp1",
+          "label": "2.1.0.3 Fix Pack 1"
+          }
+        ],
         "group_name": "newicp"
       },
       {
@@ -188,7 +208,7 @@
         "type": "string",
         "required": false,
         "secured": false,
-        "label": "ICP Cluster Name",
+        "label": "IBM Cloud Private Cluster Name",
         "hidden": false,
         "immutable": false,
         "regex": "^[a-z0-9.-]{1,80}$",
@@ -202,28 +222,6 @@
         "required": false,
         "secured": false,
         "label": "Kubernetes apiserver secure port",
-        "hidden": false,
-        "immutable": false,
-        "group_name": "oldicp"
-      },
-      {
-        "name": "master_node_ip",
-        "description": "Please provide master ip for a non-HA topology",
-        "type": "string",
-        "required": true,
-        "secured": false,
-        "label": "Master Node IP Address",
-        "hidden": false,
-        "immutable": false,
-        "group_name": "oldicp"
-      },
-      {
-        "name": "cluster_vip",
-        "description": "Please provide cluster vip for an HA topology",
-        "type": "string",
-        "required": false,
-        "secured": false,
-        "label": "IBM Cloud Private Cluster VIP",
         "hidden": false,
         "immutable": false,
         "group_name": "oldicp"
