@@ -26,16 +26,14 @@
       "displayName": "IBM Cloud Private Upgrade",
       "providerDisplayName": "",
       "longDescription": "This template will upgrade your IBM Cloud Private version",
-      "bullets": [{
-    "title": "Clouds",
-    "description": "<br>"},
-{
-    "title": "Operating Systems Supported",
-    "description": "Ubuntu 16<br>"},
+      "bullets": [
 {
     "title": "Usage and Special Notes",
     "description": "1. IBM Knowledge Center for IBM Cloud Private - <a href=\"https://www.ibm.com/support/knowledgecenter/en/SSBS6K/product_welcome_cloud_private.html\" target=\"_blank\">https://www.ibm.com/support/knowledgecenter/en/SSBS6K/product_welcome_cloud_private.html</a><br>2. IBM Support Portal - <a href=\"https://www.ibm.com/support/home/\" target=\"_blank\">https://www.ibm.com/support/home/</a><br>"
-}
+},
+{
+  "title": "Operating Systems Supported",
+  "description": "Ubuntu 16<br>"}
 ],
       "featuredImageUrl": "",
       "imageUrl": "",
